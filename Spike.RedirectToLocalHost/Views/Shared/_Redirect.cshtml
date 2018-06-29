@@ -1,0 +1,15 @@
+﻿
+@{
+    @model  Spike.RedirectToLocalHost.Models.RedirectModel
+}
+   
+
+<h2>This page will help you redirecting to localhost</h2>
+
+
+<p>You are about to redirect to:</p>
+
+<h3>@Html.Raw(Model.Url)</h3>
+
+
+<input type="button" value="Redirect Now" onclick="window.location='@Model.Url';" />
